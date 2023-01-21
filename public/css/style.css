@@ -236,7 +236,12 @@ footer section i:hover{
   .logo-liebre{
     height: 100%;
     width: 50%;
+    margin-right: 40px;
   }
+   }
+   input{
+    margin: 0px 50px 0px 15px 
+   }
   .search {
     height: 50px;
     margin: auto 0;
