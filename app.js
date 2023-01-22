@@ -16,5 +16,5 @@ app.get('/login', (req, res)=>{
 });
 
 app.listen(PORT, ()=>{
-    console.log('servidor corriendo');
+    console.log('servidor corriendo probablemente en el puerto 3000');
 });

@@ -19,39 +19,45 @@
   </head>
   <body>
     <header>
+      <!-- Empieza el encabezado de la pagina -->
       <nav>
+        <!-- grilla del encabezado -->
+      <div class="g-header">
+        <!-- logo, barra de busqueda y compra de tarjeta -->
         <span class="nav-all">
-          <div class="nav-conteiner">
-            <img
-              class="logo-liebre"
-              src="/images/logo-mercado-liebre.svg"
-              alt="logo-mercado-liebre"
-            />
-            <div class="search">                     
-              <input type="text" placeholder="Buscar productos, marcas"/>              
-              <button class="button" type="submit">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div>
+          <img
+          class="logo-liebre"
+          src="/images/logo-mercado-liebre.svg"
+          alt="logo-mercado-liebre"
+          />
+          <div class="search">
+          <input type="text" placeholder="Buscar productos, marcas" />
+          <button class="button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
           </div>
           <p class="nav-tittle">
             <i class="fa-solid fa-hand-holding-dollar"></i>
             compra en cuotas y sin tarjeta de crédito
           </p>
         </span>
-        <ul class="navegation">
-          <li><a href="">Ofertas</a></li>
-          <li><a href="">Tiendas Oficiales</a></li>
-          <li><a href="">Vender</a></li>
-          <li><a href="">Ayuda</a></li>
-        </ul>
-
-        <ul class="navegation">
+        <!-- -la parte de abajo del header- -->
+        <div class="g-menu-header">
+                  <!-- menu de navegación pagina -->
+        <div>
+          <ul class="navegation1">
+            <li><a href="">Ofertas</a></li>
+            <li><a href="">Tiendas Oficiales</a></li>
+            <li><a href="">Vender</a></li>
+            <li><a href="">Ayuda</a></li>
+          </ul>
+        </div>
+                <!-- menu de navegación cuenta -->
+        <ul class="navegation1">
           <li>
             <a href="/register">Creá tu cuenta</a>
             <i class="fa-regular fa-id-card"></i>
           </li>
-
           <li>
             <a href="/login">Ingresá</a>
             <i class="fa-solid fa-arrow-right-to-bracket"></i>
@@ -61,12 +67,15 @@
             <a href="">Mis compras</a>
             <i class="fa-solid fa-basket-shopping"></i>
           </li>
+         </div> 
         </ul>
-
+        <!-- burger menu para diseño adaptativo  -->
         <div class="burger-menu">
           <i class="fas fa-bars"></i>
         </div>
+        </div>
       </nav>
+      <!-- esta imagen deberia hacer parte del body -->
       <img
         class="home-banner"
         src="/images/img-home-banner.jpg"
