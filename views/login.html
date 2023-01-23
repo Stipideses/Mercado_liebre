@@ -26,11 +26,13 @@
       <div class="g-header">
         <!-- logo, barra de busqueda y compra de tarjeta -->
         <span class="nav-all">
-          <img
-          class="logo-liebre"
-          src="/images/logo-mercado-liebre.svg"
-          alt="logo-mercado-liebre"
-          />
+          <a href="/">
+            <img
+            class="logo-liebre"
+            src="/images/logo-mercado-liebre.svg"
+            alt="logo-mercado-liebre"
+            />
+          </a>
           <div class="search">
           <input type="text" placeholder="Buscar productos, marcas" />
           <button class="button" type="submit">
@@ -80,27 +82,29 @@
       </nav>
        
     </header>
-    <main>
-      <form class="form" action="/" >
-        <label for="name">Nombre de usuario:</label> 
-        <input
-          type="text"
-          id="name"
-          name="name"
-          placeholder="nombre de usuario"
-        />
-
-        <label for="password">Contraseña:</label> 
-        <input
-          type="text"
-          id="password"
-          name="password"
-          placeholder="contraseña"
-        />
-
-        <button type="submit">Enviar</button>
-      </form>
-    </main>
+    <div class="g-form">
+      <main>
+        <form class="form" action="/" >
+          <label for="name">Nombre de usuario:</label> 
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="nombre de usuario"
+          />
+  
+          <label for="password">Contraseña:</label> 
+          <input
+            type="text"
+            id="password"
+            name="password"
+            placeholder="contraseña"
+          />
+  
+          <button type="submit">Enviar</button>
+        </form>
+      </main>
+    </div>
     <footer>
       <div class="footer-conteiner">
         <section class="g-fot">

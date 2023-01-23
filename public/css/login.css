@@ -18,9 +18,13 @@
   grid-template-columns: 1fr;
   align-self: center;
 }
+.g-form{
+  display: grid;
+  place-content: center;
+}
 main {
   display: grid;
-  grid-template-rows: 300px ;
+  grid-template-rows: 800px ;
   width: 100%;
   margin: 0 auto;
   place-content: center;
@@ -161,7 +165,7 @@ li a {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around
+  margin-top: 40px;
 }
 
 .form label{
@@ -275,7 +279,7 @@ footer section i {
 
     main {
       display: grid;
-      grid-template-rows: 300px ;
+      grid-template-rows: 800px ;
       width: 100%;
       margin: 0 auto;
       place-content: center;
@@ -311,11 +315,11 @@ footer section i {
 
 
 .logo-liebre {
-  display: block;
-  margin-left: 10px;
+  display: block;  
   height: 80%;
   width: 80%;
   align-self: center;
+  justify-self: left;
 }
 
 .search {
@@ -332,7 +336,7 @@ footer section i {
 
 main {
   display: grid;
-  grid-template-rows: 300px ;
+  grid-template-rows: 800px ;
   width: 100%;
   margin: 0 auto;
   place-content: center;

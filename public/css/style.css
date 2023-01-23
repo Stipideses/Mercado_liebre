@@ -26,7 +26,7 @@ Verde: #39b54a; */
 }
 main {
   display: grid;
-  grid-template-rows: 150px 35px 1fr 35px 1fr ;
+  grid-template-rows: 150px 40px 1fr 40px 1fr ;
   width: 100%;
   margin: 0 auto;
 }
@@ -161,7 +161,8 @@ li a {
 main section {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px auto;
+  margin: auto auto;
+  justify-content: space-evenly
 }
 main section article i {
   display: block;
@@ -182,9 +183,9 @@ main section article i:hover{
   transition: 1000ms;
 }
 .titles {
-  font-size: 18px;
-  margin-left: 20px;
+  font-size: 15px;
   align-self: center;
+  justify-self: center;
 }
 article {
   margin: 10px;
@@ -288,7 +289,7 @@ footer section i:hover{
 
       main {
         display: grid;
-        grid-template-rows: 300px 35px 1fr 35px 1fr ;
+        grid-template-rows: 300px 40px 1fr 40px 1fr ;
         width: 100%;
         margin: 0 auto;
       }
@@ -309,6 +310,20 @@ footer section i:hover{
         grid-template-rows: auto;
       }
 
+      .titles {
+        font-size: 18px;
+        align-self: center;
+        justify-self: center;
+      }
+
+        main section {
+          display: flex;
+          flex-wrap: wrap;
+          margin: auto auto;    
+          justify-content: flex-start;
+                
+        }
+
     }
 
     
@@ -323,11 +338,12 @@ footer section i:hover{
   
 
   .logo-liebre {
-    display: block;
-    margin-left: 10px;
+    display: block;    
     height: 80%;
     width: 80%;
     align-self: center;
+    justify-self: baseline;
+
   }
 
   .search {
@@ -344,7 +360,7 @@ footer section i:hover{
 
   main {
     display: grid;
-    grid-template-rows: 300px 35px 1fr 35px 1fr ;
+    grid-template-rows: 300px 40px 1fr 40px 1fr ;
     width: 100%;
     margin: 0 auto;
   }
@@ -352,8 +368,4 @@ footer section i:hover{
 }
 
 
-
-
-
-}
 
