@@ -21,7 +21,7 @@
     <header>
       <!-- Empieza el encabezado de la pagina -->
       <nav>
-        <!-- grilla del encabezado -->
+        <!-- Grilla del encabezado -->
       <div class="g-header">
         <!-- logo, barra de busqueda y compra de tarjeta -->
         <span class="nav-all">
@@ -41,49 +41,51 @@
             compra en cuotas y sin tarjeta de crédito
           </p>
         </span>
-        <!-- -la parte de abajo del header- -->
-        <div class="g-menu-header">
-                  <!-- menu de navegación pagina -->
-        <div>
-          <ul class="navegation1">
-            <li><a href="">Ofertas</a></li>
-            <li><a href="">Tiendas Oficiales</a></li>
-            <li><a href="">Vender</a></li>
-            <li><a href="">Ayuda</a></li>
-          </ul>
-        </div>
-                <!-- menu de navegación cuenta -->
-        <ul class="navegation1">
-          <li>
-            <a href="/register">Creá tu cuenta</a>
-            <i class="fa-regular fa-id-card"></i>
-          </li>
-          <li>
-            <a href="/login">Ingresá</a>
-            <i class="fa-solid fa-arrow-right-to-bracket"></i>
-          </li>
-
-          <li>
-            <a href="">Mis compras</a>
-            <i class="fa-solid fa-basket-shopping"></i>
-          </li>
-         </div> 
-        </ul>
-        <!-- burger menu para diseño adaptativo  -->
-        <div class="burger-menu">
+          <!-- -La parte de abajo del header- -->
+          <div class="g-menu-header">
+          <!-- menu de navegación pagina -->
+          <!-- burger menu para diseño adaptativo  -->
+          <div class="burger-menu">
           <i class="fas fa-bars"></i>
+          </div>
         </div>
-        </div>
+        <div class="g-menu-header2">
+          <div>
+            <ul class="navegation1">
+              <li class="list-nav"><a href="">Ofertas</a></li>
+              <li class="list-nav"><a href="">Tiendas Oficiales</a></li>
+              <li class="list-nav"><a href="">Vender</a></li>
+              <li class="list-nav"><a href="">Ayuda</a></li>
+            </ul>
+          </div>
+          <!-- menu de navegación cuenta -->
+          <ul class="navegation2">
+            <li class="list-nav">
+              <a href="/register">Creá tu cuenta</a>
+              <i class="fa-regular fa-id-card"></i>
+            </li>
+            <li class="list-nav">
+              <a href="/login">Ingresá</a>
+              <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            </li>
+            <li class="list-nav">
+              <a href="">Mis compras</a>
+              <i class="fa-solid fa-basket-shopping"></i>
+            </li>
+           </div>
+        </div> 
+        </ul>
+
       </nav>
-      <!-- esta imagen deberia hacer parte del body -->
+       
+    </header>
+    <main>
       <img
         class="home-banner"
         src="/images/img-home-banner.jpg"
         alt="img-home-banner"
       />
-    </header>
-    <main>
-      <!-- aca empiesan las opciones clasicas de compra -->
+      <!-- aca empiezan las opciones clasicas de compra -->
       <h3 class="titles">
         <b> Sección: Basado en tu última visita </b>
       </h3>
@@ -160,7 +162,7 @@
 
       <!-- aca empiesa la secion Ofertas -->
       <h3 class="titles">
-        <b> seccion: Ofertas </b>
+        <b> Sección: Ofertas </b>
       </h3>
       <section>
         <article>
@@ -235,7 +237,7 @@
     </main>
     <footer>
       <div class="footer-conteiner">
-        <section>
+        <section class="g-fot">
           <i class="fa-solid fa-credit-card"></i>
           <h4><b>Pagá con tarjeta o en efectivo</b></h4>
           <p>
@@ -244,7 +246,7 @@
           </p>
         </section>
 
-        <section>
+        <section class="g-fot">
           <i class="fa-solid fa-gift"></i>
           <h4><b>Envío gratis desde $ 2.500</b></h4>
           <p>
@@ -253,18 +255,21 @@
           </p>
         </section>
 
-        <section>
+        <section class="g-fot">
           <i class="fa-solid fa-user-shield"></i>
           <h4><b>Seguridad, de principio a fin</b></h4>
           <p>
             ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
             puedas hacer, porque estás siempre protegid@.
-          </p>
+          </p>         
+        </section>
+        <section class="g-fot">
+          <div class="Copyright">
+            <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+          </div>
         </section>
       </div>
-      <section>
-        <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
-      </section>
+      
     </footer>
   </body>
 </html>

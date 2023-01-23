@@ -1,8 +1,35 @@
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+}
+
+/* Grilla del encabezado  */
+.g-header{
+  display: grid;
+  grid-template-rows: 150px 1fr;
+}
+
+/* La parte de abajo del header */
+.g-menu-header{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-self: center;
+}
+main {
+  display: grid;
+  grid-template-rows: 300px ;
+  width: 100%;
+  margin: 0 auto;
+  place-content: center;
+}
+.home-banner{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+
 }
 
 img {
@@ -18,9 +45,13 @@ body {
 header {
   background-color: #eac926;
   width: 100%;
-  padding: 15px 0 10px 0;
+  
 }
-
+.nav-all{
+  display:  grid;
+  grid-template-rows: 70px 40px 40px;
+  width: 100vw;
+}
 .nav-conteiner {
   width: 100%;
   display: flex;
@@ -28,24 +59,39 @@ header {
 }
 
 .logo-liebre {
-  height: 45%;
-  width: 45%;
-  display: block;
-  margin-left: 10px;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
 }
 
 .search {
-  width: 43%;
-  display: flex;
+  width: 80%;
   background-color: #fff;
   border: #fff 1px solid;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  place-content: center;
   border-radius: 10px;
+  height: 40px;
+  margin: auto 0;
+  justify-self: center;
 }
 
-input {
-  width: 85%;
+.search input {
+  width: 100%;
   border: none;
   border-radius: 10px;
+  padding-left: 20px;
+}
+
+
+.nav-tittle {
+ margin: 0px 30px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+
 }
 
 .button {
@@ -55,6 +101,12 @@ input {
   padding-left: 5px;
 }
 
+.list-nav{
+  margin-right: 15px ;
+}
+
+
+}
 .nav-tittle {
   font-size: 12px;
   text-align: center;
@@ -65,8 +117,22 @@ li a {
   text-decoration: none;
 }
 
-.navegation {
-  margin: 10px 0;
+.navegation1 {
+  display: none;
+  margin: 10px 20px;
+  list-style-type: none;
+  text-align: center;
+  flex-direction: column;
+  text-align: left;
+}
+.navegation2 {
+  display: none;
+  margin: 10px;
+  list-style-type: none;
+  justify-content: flex-end;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
 }
 
 .burger-menu {
@@ -76,6 +142,8 @@ li a {
   height: 2.5em;
   border-radius: 15%;
   margin: 10px auto;
+  align-self: center;
+  justify-self: center;
 }
 
 .burger-menu i {
@@ -83,15 +151,17 @@ li a {
   margin: auto;
 }
 
+/* empieza el formulario */
 .form{
   background-color: #ebebeb;
-  width: 90%;
+  width: 100%;
   max-width: 900px;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-around
 }
 
 .form label{
@@ -99,11 +169,12 @@ li a {
 }
 
 .form input{
-  width: 60%;
+  width: 300px;
   height: 32px;
   padding: 2px;   
   margin: 0.5rem;
   border: 1px solid #1259c3;
+
 }
 .form input:hover{
   width: 90%;
@@ -136,6 +207,22 @@ li a {
   transition: 2000ms;
 }
 
+.footer-conteiner{
+  display: grid;
+  grid-template-rows: 100px 100px 100px 40px;
+  margin-top: 20px;
+}
+
+.Copyright{
+display: grid;
+place-content: center;
+padding-top: 30px;
+}
+.g-fot{
+  padding: 0px 30px;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
 footer {
   text-align: center;
 }
@@ -158,52 +245,98 @@ footer section i {
     display: none;
   }
 }
-/* media querys tablet */
-@media (min-width: 361px) {
-  .search {
-    height: 50px;
-    margin: auto 0;
-  }
+
+ /* ----Diseño adaptativo primer punto de quiebre---- */
+
+ @media (min-width: 769px) {
   .burger-menu {
     display: none;
   }
-  .home-banner {
-    width: 100vw;
-    padding: 0;
-  }
-}
-
-/* media querys desktop */
-@media (min-width: 769px) {
-  body {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  }
-
-  .nav-all {
+  .navegation1 {
     display: flex;
-    width: 100vw;
+    flex-direction: row;
+    margin: 10px;
+    list-style-type: none;
+    text-align: center;
   }
-  .nav-tittle {
-    margin: auto 0;
-    flex-grow: 0.3;
+  .navegation2 {
+    display: flex;
+    margin: 10px;
+    list-style-type: none;
+    justify-content: flex-end;
+    flex-direction: row;
+    justify-self: auto;
   }
-  .nav-conteiner {
-    flex-grow: 0.6;
-    width: 60vw;
+    .g-menu-header2{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-self: center;
+    }
+
+    main {
+      display: grid;
+      grid-template-rows: 300px ;
+      width: 100%;
+      margin: 0 auto;
+      place-content: center;
+    }
+    .nav-all{
+      display:  grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 100px ;
+      width: 100vw;
+    }
+    .g-header{
+      display: grid;
+      grid-template-rows: 100px 1fr;
+    }
+  
+    .footer-conteiner{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+    }
+
   }
-  .logo-liebre {
-    height: 100%;
-    width: 50%;
-  }
-  .search {
-    height: 50px;
-    margin: auto 0;
-  }
-  .burger-menu {
-    display: none;
-  }
-  .home-banner {
-    width: 100vw;
-    padding: 0;
-  }
+
+  
+
+
+
+/* ----Diseño adaptativo segundo punto de quiebre---- */
+
+@media (min-width: 1024px) {
+
+
+
+
+.logo-liebre {
+  display: block;
+  margin-left: 10px;
+  height: 80%;
+  width: 80%;
+  align-self: center;
 }
+
+.search {
+  width: 100%;
+  background-color: #fff;
+  border: #fff 1px solid;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  place-content: center;
+  border-radius: 10px;
+  height: 40px;
+  margin: auto 0;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 300px ;
+  width: 100%;
+  margin: 0 auto;
+  place-content: center;
+}
+
+}
+

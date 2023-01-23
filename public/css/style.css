@@ -11,15 +11,30 @@ Verde: #39b54a; */
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
+
+/* Grilla del encabezado  */
 .g-header{
   display: grid;
-  grid-template-rows: 3fr 1fr;
+  grid-template-rows: 150px 1fr;
 }
 
+/* La parte de abajo del header */
 .g-menu-header{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   align-self: center;
+}
+main {
+  display: grid;
+  grid-template-rows: 150px 35px 1fr 35px 1fr ;
+  width: 100%;
+  margin: 0 auto;
+}
+.home-banner{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+
 }
 
 img {
@@ -35,9 +50,13 @@ body {
 header {
   background-color: #eac926;
   width: 100%;
-  padding: 15px 0 10px 0;
+  
 }
-
+.nav-all{
+  display:  grid;
+  grid-template-rows: 70px 40px 40px;
+  width: 100vw;
+}
 .nav-conteiner {
   width: 100%;
   display: flex;
@@ -45,26 +64,39 @@ header {
 }
 
 .logo-liebre {
-  height: 45%;
-  width: 45%;
-  display: block;
-  margin-left: 10px;
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
 }
 
 .search {
-  width: 100%;
+  width: 80%;
   background-color: #fff;
   border: #fff 1px solid;
   display: grid;
   grid-template-columns: 4fr 1fr;
   place-content: center;
+  border-radius: 10px;
+  height: 40px;
+  margin: auto 0;
+  justify-self: center;
 }
 
 .search input {
-  width: 80%;
+  width: 100%;
   border: none;
   border-radius: 10px;
-  
+  padding-left: 20px;
+}
+
+
+.nav-tittle {
+ margin: 0px 30px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+
 }
 
 .button {
@@ -74,6 +106,12 @@ header {
   padding-left: 5px;
 }
 
+.list-nav{
+  margin-right: 15px ;
+}
+
+
+}
 .nav-tittle {
   font-size: 12px;
   text-align: center;
@@ -83,17 +121,24 @@ li a {
   color: #000;
   text-decoration: none;
 }
-/* nav i{
-  color: #1259c3;
-} */
+
 .navegation1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 10px;
+  display: none;
+  margin: 10px 20px;
   list-style-type: none;
   text-align: center;
+  flex-direction: column;
+  text-align: left;
 }
-
+.navegation2 {
+  display: none;
+  margin: 10px;
+  list-style-type: none;
+  justify-content: flex-end;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+}
 
 .burger-menu {
   background-color: #1259c3;
@@ -102,6 +147,8 @@ li a {
   height: 2.5em;
   border-radius: 15%;
   margin: 10px auto;
+  align-self: center;
+  justify-self: center;
 }
 
 .burger-menu i {
@@ -109,10 +156,8 @@ li a {
   margin: auto;
 }
 
-main {
-  width: 95vw;
-  margin: 0 auto;
-}
+/* Empieza el main */
+
 main section {
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +182,9 @@ main section article i:hover{
   transition: 1000ms;
 }
 .titles {
-  font-size: 24px;
+  font-size: 18px;
+  margin-left: 20px;
+  align-self: center;
 }
 article {
   margin: 10px;
@@ -179,7 +226,22 @@ article img {
 article:hover .description{
   display: block;
 }
+.footer-conteiner{
+  display: grid;
+  grid-template-rows: 100px 100px 100px 40px;
+  margin-top: 20px;
+}
 
+.Copyright{
+display: grid;
+place-content: center;
+padding-top: 30px;
+}
+.g-fot{
+  padding: 0px 30px;
+  font-size: 13px;
+  padding-bottom: 20px;
+}
 
 footer {
   text-align: center;
@@ -195,89 +257,103 @@ footer section i:hover{
   color: #666;
   transition: 1000ms;
 }
-
-@media (max-width: 361px) {
-  .navegation {
-    display: none;
-  }
-
-  .description {
-    display: none;
-  }
-  .home-banner{
-    display: none;
-  }
   
-}
-/* media querys tablet */
-@media (min-width: 768px) {
-  .search {
-    height: 50px;
-    margin: auto 0;
-  }
-  .burger-menu {
-    display: none;
-  }
-  .home-banner{
-    width: 100vw;
-    padding: 0;
-  }
-  article {
-    width: 42vw;
-  }
 
-  
-  /* aca comiensa el footer */
-  .footer-conteiner{
-    display: flex;
-  }
-}
+  /* ----Diseño adaptativo primer punto de quiebre---- */
 
-/* media querys desktop */
 @media (min-width: 769px) {
+    .burger-menu {
+      display: none;
+    }
+    .navegation1 {
+      display: flex;
+      flex-direction: row;
+      margin: 10px;
+      list-style-type: none;
+      text-align: center;
+    }
+    .navegation2 {
+      display: flex;
+      margin: 10px;
+      list-style-type: none;
+      justify-content: flex-end;
+      flex-direction: row;
+      justify-self: auto;
+    }
+      .g-menu-header2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+      }
+
+      main {
+        display: grid;
+        grid-template-rows: 300px 35px 1fr 35px 1fr ;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .nav-all{
+        display:  grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 100px ;
+        width: 100vw;
+      }
+      .g-header{
+        display: grid;
+        grid-template-rows: 100px 1fr;
+      }
+    
+      .footer-conteiner{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+      }
+
+    }
+
+    
+
+
+
+  /* ----Diseño adaptativo segundo punto de quiebre---- */
+
+@media (min-width: 1024px) {
+
+  
   
 
-  .nav-all{
-    display:  grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100vw;
-  }
-  .nav-tittle{
-    margin: auto 0;
-    flex-grow: .3;
-  }
-  .nav-conteiner{
-    flex-grow: .60;
-    width: 60vw;
-  }
-  .logo-liebre{
+  .logo-liebre {
+    display: block;
+    margin-left: 10px;
     height: 80%;
     width: 80%;
     align-self: center;
-    
-  }
-   }
-   input{
-    margin: 0px 50px 0px 15px 
-   }
-  .search {
-    height: 50px;
-    margin: auto 0;
-  }
-  .burger-menu {
-    display: none;
-  }
-  .home-banner{
-    width: 100vw;
-    padding: 0;
-  }
-  article {
-    width: 21vw;
-    /* height: 55vh; */
   }
 
-  /* article img {
-    width: 90%;
-    height: 40vh;
-  } */
+  .search {
+    width: 100%;
+    background-color: #fff;
+    border: #fff 1px solid;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    place-content: center;
+    border-radius: 10px;
+    height: 40px;
+    margin: auto 0;
+  }
+
+  main {
+    display: grid;
+    grid-template-rows: 300px 35px 1fr 35px 1fr ;
+    width: 100%;
+    margin: 0 auto;
+  }
+
 }
+
+
+
+
+
+}
+
